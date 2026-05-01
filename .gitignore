@@ -14,8 +14,9 @@ db.sqlite3
 *.log
 local_settings.py
 /static/
+/staticfiles/
 
-# Large video files (served from Cloudinary)
+# Large video files
 *.mp4
 
 # Environment variables
@@ -25,10 +26,11 @@ local_settings.py
 .DS_Store
 Thumbs.db
 
-# Original static source folders (not needed on server)
-portfolio/
-Website/
+# Original static source folders (ROOT ONLY)
+/portfolio/
+/Website/
 
 # Temp scripts
 update_html.py
+update_cloudinary.py
 update_cloudinary.py
