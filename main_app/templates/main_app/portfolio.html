@@ -1,0 +1,305 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Dizzles | Marketing Agency Portfolio</title>
+    <meta
+      name="description"
+      content="Digital Dizzles is a marketing agency offering social media management, video editing, photo and video shoots, website services, and campaign strategy."
+    />
+    <link rel="stylesheet" href="{% static 'main_app/portfolio/styles.css' %}" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Digital Dizzles home">
+        <img src="https://res.cloudinary.com/dwo7rt7bl/image/upload/q_auto/f_auto/v1777657792/DD_logo_czd7cy.png" alt="Digital Dizzles logo" />
+        <span>Digital Dizzles</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+        <a href="{% url 'website' %}">Website</a>
+      </nav>
+
+      <a class="header-action" href="#contact">Start a Project</a>
+    </header>
+
+    <main id="top">
+      <section class="hero-section">
+        <div class="hero-copy">
+          <div class="hero-mark">
+            <img src="https://res.cloudinary.com/dwo7rt7bl/image/upload/q_auto/f_auto/v1777657792/DD_logo_czd7cy.png" alt="" />
+            <span>Creative marketing agency</span>
+          </div>
+          <div class="hero-statement">
+            <p class="eyebrow">Marketing, content, production, and websites</p>
+            <h1>Digital Dizzles</h1>
+            <p>
+              We create sharp digital campaigns and scroll-stopping visual content
+              for brands that want to look credible, move fast, and grow online.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#work">View Portfolio</a>
+              <a class="button secondary" href="#services">Explore Services</a>
+            </div>
+          </div>
+          <div class="hero-services" aria-label="Featured services">
+            <span>Social Media</span>
+            <span>Video Editing</span>
+            <span>Photoshoots</span>
+            <span>Videoshoots</span>
+            <span>Websites</span>
+          </div>
+        </div>
+
+        <div class="hero-video-shell" aria-label="Featured Digital Dizzles video">
+          <video
+            src="https://res.cloudinary.com/dwo7rt7bl/video/upload/q_auto/f_auto/v1777657982/final_version_hqdc7f.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+          ></video>
+          <div class="video-badge">Featured production</div>
+        </div>
+      </section>
+
+      <section class="metrics-band" aria-label="Digital Dizzles capabilities">
+        <div>
+          <strong>Strategy</strong>
+          <span>Campaign planning and brand direction</span>
+        </div>
+        <div>
+          <strong>Content</strong>
+          <span>Reels, ads, edits, shoots, and social media assets</span>
+        </div>
+        <div>
+          <strong>Growth</strong>
+          <span>Social management, digital marketing, and web presence</span>
+        </div>
+      </section>
+
+      <section class="section intro-section">
+        <div class="section-heading">
+          <p class="eyebrow">What we do</p>
+          <h2>Creative work built for attention and action.</h2>
+        </div>
+        <p>
+          Digital Dizzles blends marketing strategy with hands-on production.
+          From social media management and paid campaign assets to polished video
+          edits, photoshoots, videoshoots, and responsive websites, we help
+          businesses show up with a stronger digital presence.
+        </p>
+      </section>
+
+      <section class="section services-section" id="services">
+        <div class="section-heading">
+          <p class="eyebrow">Services</p>
+          <h2>Everything your brand needs to stay visible.</h2>
+        </div>
+
+        <div class="service-grid">
+          <article>
+            <span>01</span>
+            <h3>Digital Marketing</h3>
+            <p>
+              Campaign strategy, creative direction, platform planning, and
+              content ideas shaped around your business goals.
+            </p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Social Media Management</h3>
+            <p>
+              Content calendars, posting support, brand consistency, audience
+              engagement, and performance-minded account management.
+            </p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Video Editing</h3>
+            <p>
+              Short-form reels, ad edits, product videos, motion-led sequences,
+              captions, pacing, sound, and platform-ready exports.
+            </p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Photo & Video Shoots</h3>
+            <p>
+              On-brand production for products, services, teams, events, and
+              campaigns that need original visual material.
+            </p>
+          </article>
+          <article>
+            <span>05</span>
+            <h3>Website Services</h3>
+            <p>
+              Portfolio sites, business websites, landing pages, and web
+              experiences designed to turn visitors into leads.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section work-section" id="work">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2>Video-first portfolio samples.</h2>
+        </div>
+
+        <div class="portfolio-grid">
+          <button class="work-card tall" data-video="Sample 03.mp4" type="button">
+            <video src="{% static 'main_app/portfolio/Sample 03.mp4' %}" muted loop playsinline preload="metadata"></video>
+            <span>Social Campaign Sample</span>
+          </button>
+          <button class="work-card" data-video="ScrollHaus Media v1.mp4" type="button">
+            <video src="{% static 'main_app/portfolio/ScrollHaus Media v1.mp4' %}" muted loop playsinline preload="metadata"></video>
+            <span>Media Brand Edit</span>
+          </button>
+          <button class="work-card" data-video="https://res.cloudinary.com/dwo7rt7bl/video/upload/q_auto/f_auto/v1777657854/Olipop_Ad_z6eyum.mp4" type="button">
+            <video src="https://res.cloudinary.com/dwo7rt7bl/video/upload/q_auto/f_auto/v1777657854/Olipop_Ad_z6eyum.mp4" muted loop playsinline preload="metadata"></video>
+            <span>Product Ad Concept</span>
+          </button>
+          <button class="work-card tall" data-video="https://res.cloudinary.com/dwo7rt7bl/video/upload/q_auto/f_auto/v1777657967/Sample_01_eix7v8.mp4" type="button">
+            <video src="https://res.cloudinary.com/dwo7rt7bl/video/upload/q_auto/f_auto/v1777657967/Sample_01_eix7v8.mp4" muted loop playsinline preload="metadata"></video>
+            <span>Content Production</span>
+          </button>
+          <button class="work-card" data-video="https://res.cloudinary.com/dwo7rt7bl/video/upload/q_auto/f_auto/v1777657839/Sonos_Ad_aumpjw.mp4" type="button">
+            <video src="https://res.cloudinary.com/dwo7rt7bl/video/upload/q_auto/f_auto/v1777657839/Sonos_Ad_aumpjw.mp4" muted loop playsinline preload="metadata"></video>
+            <span>Tech Product Ad</span>
+          </button>
+          <button class="work-card" data-video="https://res.cloudinary.com/dwo7rt7bl/video/upload/q_auto/f_auto/v1777657864/Sample_02_ymvmls.mp4" type="button">
+            <video src="https://res.cloudinary.com/dwo7rt7bl/video/upload/q_auto/f_auto/v1777657864/Sample_02_ymvmls.mp4" muted loop playsinline preload="metadata"></video>
+            <span>Short-Form Edit</span>
+          </button>
+          <button class="work-card" data-video="https://res.cloudinary.com/dwo7rt7bl/video/upload/q_auto/f_auto/v1777657986/Sample_1_cyderb.mp4" type="button">
+            <video src="https://res.cloudinary.com/dwo7rt7bl/video/upload/q_auto/f_auto/v1777657986/Sample_1_cyderb.mp4" muted loop playsinline preload="metadata"></video>
+            <span>Brand Reel</span>
+          </button>
+          <button class="work-card" data-video="https://res.cloudinary.com/dwo7rt7bl/video/upload/q_auto/f_auto/v1777657989/SAMPLE_4_y5ta4g.mp4" type="button">
+            <video src="https://res.cloudinary.com/dwo7rt7bl/video/upload/q_auto/f_auto/v1777657989/SAMPLE_4_y5ta4g.mp4" muted loop playsinline preload="metadata"></video>
+            <span>Campaign Visual</span>
+          </button>
+          <button class="work-card" data-video="https://res.cloudinary.com/dwo7rt7bl/video/upload/q_auto/f_auto/v1777657982/final_version_hqdc7f.mp4" type="button">
+            <video src="https://res.cloudinary.com/dwo7rt7bl/video/upload/q_auto/f_auto/v1777657982/final_version_hqdc7f.mp4" muted loop playsinline preload="metadata"></video>
+            <span>Featured Reel</span>
+          </button>
+          <button class="work-card" data-video="https://res.cloudinary.com/dwo7rt7bl/video/upload/q_auto/f_auto/v1777657805/1_y0tkzq.mp4" type="button">
+            <video src="https://res.cloudinary.com/dwo7rt7bl/video/upload/q_auto/f_auto/v1777657805/1_y0tkzq.mp4" muted loop playsinline preload="metadata"></video>
+            <span>Social Video Sample</span>
+          </button>
+          <button class="work-card" data-video="https://res.cloudinary.com/dwo7rt7bl/video/upload/q_auto/f_auto/v1777657834/3_fsd0kj.mp4" type="button">
+            <video src="https://res.cloudinary.com/dwo7rt7bl/video/upload/q_auto/f_auto/v1777657834/3_fsd0kj.mp4" muted loop playsinline preload="metadata"></video>
+            <span>Creative Edit</span>
+          </button>
+          <button class="work-card" data-video="https://res.cloudinary.com/dwo7rt7bl/video/upload/q_auto/f_auto/v1777657979/Sample_3_fr64ps.mp4" type="button">
+            <video src="https://res.cloudinary.com/dwo7rt7bl/video/upload/q_auto/f_auto/v1777657979/Sample_3_fr64ps.mp4" muted loop playsinline preload="metadata"></video>
+            <span>Brand Content</span>
+          </button>
+          <button class="work-card" data-video="https://res.cloudinary.com/dwo7rt7bl/video/upload/q_auto/f_auto/v1777657841/SAMPLE_5_hi1s18.mp4" type="button">
+            <video src="https://res.cloudinary.com/dwo7rt7bl/video/upload/q_auto/f_auto/v1777657841/SAMPLE_5_hi1s18.mp4" muted loop playsinline preload="metadata"></video>
+            <span>Marketing Visual</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="section process-section" id="process">
+        <div class="section-heading">
+          <p class="eyebrow">Process</p>
+          <h2>A clear path from idea to launch.</h2>
+        </div>
+        <div class="process-list">
+          <article>
+            <span>Discover</span>
+            <p>We understand your brand, offer, audience, and current digital presence.</p>
+          </article>
+          <article>
+            <span>Create</span>
+            <p>We plan, shoot, edit, design, and prepare campaign-ready assets.</p>
+          </article>
+          <article>
+            <span>Publish</span>
+            <p>We help your content go live across the right platforms with intent.</p>
+          </article>
+          <article>
+            <span>Improve</span>
+            <p>We review performance, refine the creative, and keep momentum moving.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div>
+          <p class="eyebrow">Let’s talk</p>
+          <h2>Ready to make your brand look impossible to ignore?</h2>
+          <p>
+            Share the idea, launch window, and type of support you need. We will
+            shape the right creative plan and production flow from there.
+          </p>
+        </div>
+
+        <form class="contact-card">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" />
+          </label>
+          <label>
+            Project type
+            <select name="project">
+              <option>Social media management</option>
+              <option>Video editing</option>
+              <option>Photo or video shoot</option>
+              <option>Website services</option>
+              <option>Full marketing support</option>
+            </select>
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" placeholder="Tell us what you want to build"></textarea>
+          </label>
+          <div style="display: flex; gap: 10px;">
+            <button class="button primary whatsapp-button" type="button" data-send="whatsapp" aria-label="Send message on WhatsApp" style="flex: 1;">
+              <span class="message-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img">
+                  <path d="M12 3.5c-4.7 0-8.5 3.4-8.5 7.6 0 2.2 1.1 4.3 3 5.7l-.7 3.7 4-2.1c.7.2 1.5.3 2.2.3 4.7 0 8.5-3.4 8.5-7.6S16.7 3.5 12 3.5Zm-3.2 6.1h6.4v1.5H8.8V9.6Zm0 3h4.8v1.5H8.8v-1.5Z" />
+                </svg>
+              </span>
+              WhatsApp
+            </button>
+            <button class="button primary" type="button" data-send="email" aria-label="Send message via Email" style="flex: 1; background: #333; color: white;">
+              Email Us
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="brand">
+        <img src="https://res.cloudinary.com/dwo7rt7bl/image/upload/q_auto/f_auto/v1777657792/DD_logo_czd7cy.png" alt="" />
+        <span>Digital Dizzles</span>
+      </div>
+      <p>Marketing agency portfolio</p>
+      <a href="{% url 'website' %}">Website</a>
+      <div class="footer-socials" style="margin-top: 20px; display: flex; gap: 15px; justify-content: center;">
+        <a href="https://instagram.com/digital.dizzles?igsh=eHIyc2xqNGtzcnNi" target="_blank" style="color: inherit; text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderColor='inherit'" onmouseout="this.style.borderColor='transparent'">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61557687405413&ref=PROFILE_EDIT_xav_ig_profile_page_web#" target="_blank" style="color: inherit; text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderColor='inherit'" onmouseout="this.style.borderColor='transparent'">Facebook</a>
+        <a href="https://www.linkedin.com/company/digitaldizzles/posts/?feedView=all" target="_blank" style="color: inherit; text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderColor='inherit'" onmouseout="this.style.borderColor='transparent'">LinkedIn</a>
+      </div>
+    </footer>
+
+    <div class="lightbox" aria-hidden="true">
+      <button class="lightbox-close" type="button" aria-label="Close video">×</button>
+      <video controls playsinline></video>
+    </div>
+
+    <script src="{% static 'main_app/portfolio/script.js' %}"></script>
+  </body>
+</html>
